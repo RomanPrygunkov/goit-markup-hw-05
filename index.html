@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./js/modal.js">
 </head>
 <body>
     
@@ -52,7 +53,7 @@
         <section class="section main-header-bg">
             
             <h1 class="main-header">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="button-order">Заказать услугу</button>
+            <button data-modal-open type="button" class="button-order">Заказать услугу</button>
             
         </section>
    
@@ -380,8 +381,19 @@
                 </li>
                 </ul>
             </div>
-            
+            <!-- Modal window -->
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                <button data-modal-close type="button" class="modal-close">
+                    <svg class="icon-close">
+                        <use href="./images/close.svg"></use>
+                    </svg>
+                </button>
+                <p class="modal-description">Регистрация</p>
+                </div>
+            </div>
         </div>
     </footer>
+<script src="./js/modal.js"></script>
 </body>
 </html>
