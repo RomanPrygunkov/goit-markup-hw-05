@@ -311,8 +311,7 @@ h1 {
     border-radius: 50%;
     
 }
-.icon-close {
-    position: absolute;   
+.icon-close {   
     width: 11px;
     height: 11px;
     fill: black;
